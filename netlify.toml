@@ -1,5 +1,6 @@
 [build]
-  publish = "dist"
+  base = "frontend"
+  publish = "frontend/dist"
   command = "npm run build"
 
 [[headers]]
@@ -10,6 +11,7 @@
 [[headers]]
   for = "/*.mjs"
   [headers.values]
+    [headers.values]
     Content-Type = "text/javascript"
 
 [[headers]]
