@@ -7,5 +7,8 @@
     "startCommand": "cd backend && gunicorn portfolio_backend.wsgi:application --bind 0.0.0.0:$PORT",
     "healthcheckPath": "/",
     "healthcheckTimeout": 10
+  },
+  "nixpacks": {
+    "providers": ["python"]
   }
 }
