@@ -30,10 +30,14 @@ DATABASES = {
 # CORS settings for production
 CORS_ALLOWED_ORIGINS = config('CORS_ALLOWED_ORIGINS', default='').split(',')
 if not CORS_ALLOWED_ORIGINS or CORS_ALLOWED_ORIGINS == ['']:
-    CORS_ALLOWED_ORIGINS = []
+    CORS_ALLOWED_ORIGINS = [
+        "https://kevin-13685.github.io",
+        "https://kevin-13685.github.io/-kevine-otieno-portfolio",
+    ]
 
-# Remove the development CORS setting
-CORS_ALLOW_ALL_ORIGINS = False
+# Allow all origins for now (you can restrict this later)
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
 
 # Static files configuration
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
