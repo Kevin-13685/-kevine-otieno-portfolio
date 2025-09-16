@@ -16,15 +16,10 @@ if not ALLOWED_HOSTS or ALLOWED_HOSTS == ['']:
     ALLOWED_HOSTS = ['*']  # Railway will provide the domain
 
 # Database configuration for Railway PostgreSQL
+import dj_database_url
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('PGDATABASE', default='railway'),
-        'USER': config('PGUSER', default='postgres'),
-        'PASSWORD': config('PGPASSWORD', default=''),
-        'HOST': config('PGHOST', default='localhost'),
-        'PORT': config('PGPORT', default='5432'),
-    }
+    'default': dj_database_url.parse(config('DATABASE_URL', default=''))
 }
 
 # CORS settings for production
