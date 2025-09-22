@@ -52,15 +52,15 @@ const ElevatorPitch = () => {
                 <div className="bg-white rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6 shadow-lg">
                   <Video className="h-12 w-12 text-primary-600" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Video Ready to Upload</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Video Coming Soon</h3>
                 <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                  To add your elevator pitch video, simply place your video file in the project directory 
-                  and name it "elevator-pitch.mp4" or "elevator-pitch.webm"
+                  I'm currently working on creating a compelling video elevator pitch that showcases 
+                  my passion for data analysis and the value I bring to organizations.
                 </p>
                 <div className="bg-white rounded-lg p-4 inline-block">
                   <p className="text-sm text-gray-500 flex items-center">
                     <Clock className="h-4 w-4 mr-2" />
-                    Supported formats: MP4, WebM
+                    Video will be available soon
                   </p>
                 </div>
               </div>
