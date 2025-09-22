@@ -44,7 +44,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="/logo.png" 
+              src="/logo1.png" 
               alt="Kevine Otieno Logo" 
               className="h-8 w-8 object-contain"
             />
