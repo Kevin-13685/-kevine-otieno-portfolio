@@ -29,7 +29,7 @@ const Bio = () => {
         >
           <div className="relative">
             <img
-              src="/-kevine-otieno-portfolio/kevine.png"
+              src="/kevine.png"
               alt="Kevine Otieno"
               className="w-48 h-48 rounded-full object-cover object-top shadow-2xl border-4 border-white"
               onLoad={() => console.log('Image loaded successfully!')}

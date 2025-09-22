@@ -10,7 +10,7 @@ const Home = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/-kevine-otieno-portfolio/data.png"
+            src="/data.png"
             alt="Data Science and Analytics"
             className="w-full h-full object-cover"
             onError={(e) => {

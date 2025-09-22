@@ -10,7 +10,6 @@ import Footer from './components/Footer'
 function App() {
   return (
     <Router
-      basename="/-kevine-otieno-portfolio"
       future={{
         v7_startTransition: true,
         v7_relativeSplatPath: true,
