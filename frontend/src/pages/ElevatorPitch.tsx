@@ -20,28 +20,58 @@ const ElevatorPitch = () => {
           </p>
         </motion.div>
 
-        {/* Video Placeholder */}
+        {/* Video Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="card mb-12"
         >
-          <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-xl p-12 text-center">
-            <div className="bg-white rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6 shadow-lg">
-              <Video className="h-12 w-12 text-primary-600" />
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            Watch My <span className="gradient-text">Elevator Pitch</span>
+          </h2>
+          
+          {/* Video Player */}
+          <div className="relative bg-gray-900 rounded-xl overflow-hidden shadow-2xl mb-6">
+            <div className="aspect-video">
+              <video
+                className="w-full h-full object-cover"
+                controls
+                poster="/elevator-pitch-poster.jpg"
+                preload="metadata"
+              >
+                <source src="/elevator-pitch.mp4" type="video/mp4" />
+                <source src="/elevator-pitch.webm" type="video/webm" />
+                Your browser does not support the video tag.
+              </video>
             </div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Video Coming Soon</h2>
-            <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-              I'm currently working on creating a compelling video elevator pitch that showcases 
-              my passion for data analysis and the value I bring to organizations.
+            
+            {/* Video Overlay (if no video file exists yet) */}
+            <div className="absolute inset-0 bg-gradient-to-br from-primary-50 to-primary-100 flex items-center justify-center">
+              <div className="text-center">
+                <div className="bg-white rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-6 shadow-lg">
+                  <Video className="h-12 w-12 text-primary-600" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Video Ready to Upload</h3>
+                <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+                  To add your elevator pitch video, simply place your video file in the project directory 
+                  and name it "elevator-pitch.mp4" or "elevator-pitch.webm"
+                </p>
+                <div className="bg-white rounded-lg p-4 inline-block">
+                  <p className="text-sm text-gray-500 flex items-center">
+                    <Clock className="h-4 w-4 mr-2" />
+                    Supported formats: MP4, WebM
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Video Description */}
+          <div className="text-center">
+            <p className="text-gray-600 text-lg">
+              A brief introduction to my background, expertise, and how I can help transform your data into actionable insights.
             </p>
-            <div className="bg-white rounded-lg p-4 inline-block">
-              <p className="text-sm text-gray-500 flex items-center">
-                <Clock className="h-4 w-4 mr-2" />
-                Video will be available soon
-              </p>
-            </div>
           </div>
         </motion.div>
 
