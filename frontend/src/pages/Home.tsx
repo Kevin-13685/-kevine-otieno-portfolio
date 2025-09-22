@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { BarChart3, Database, Brain, ArrowRight, Download } from 'lucide-react'
+import { BarChart3, ArrowRight, Download } from 'lucide-react'
 
 const Home = () => {
   return (
@@ -106,8 +106,12 @@ const Home = () => {
               transition={{ duration: 0.6 }}
               className="card text-center"
             >
-              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <BarChart3 className="h-8 w-8 text-primary-600" />
+              <div className="w-20 h-20 mx-auto mb-4 rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="/data-analysis.png" 
+                  alt="Data Analysis" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Data Analysis</h3>
               <p className="text-gray-600">
@@ -121,8 +125,12 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="card text-center"
             >
-              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Database className="h-8 w-8 text-primary-600" />
+              <div className="w-20 h-20 mx-auto mb-4 rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="/research-projects.png" 
+                  alt="Research Projects" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Research Projects</h3>
               <p className="text-gray-600">
@@ -136,8 +144,12 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="card text-center"
             >
-              <div className="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Brain className="h-8 w-8 text-primary-600" />
+              <div className="w-20 h-20 mx-auto mb-4 rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="/machine-learning.png" 
+                  alt="Machine Learning" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Machine Learning</h3>
               <p className="text-gray-600">
